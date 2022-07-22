@@ -6,7 +6,7 @@ body {
     padding: 0;
     margin: 0;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 html, body {
@@ -16,6 +16,19 @@ html, body {
 button {
     background-color: #3882F6;
     color: white;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
 }
 
 .content {
@@ -29,8 +42,23 @@ button {
     background-color: #1F2937;
 }
 
-.quote__container {
-    background-color: #E5E7EB;
+.header__logo,
+.header__menu {
+    flex: 1;
+}
+
+.header__logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header__menu a {
+    margin: 0 1rem;
+}
+
+.intro__text,
+.intro__image {
+    flex: 1;
 }
 
 .header__container,
@@ -40,32 +68,89 @@ button {
 .cta__container,
 .footer__container {
     display: flex;
+    flex: 1;
     align-items: center;
     justify-content: center;
 }
 
-.info__container {
-    color: black;
-}
-
 .quote__container {
+    background-color: #E5E7EB;
     color: black;
 }
 
 .header__flexbox,
 .intro__flexbox,
-.info__flexbox,
+.info__title,
 .quote__flexbox,
 .cta__flexbox,
-.footer__flexbox {
+.footer__flexbox,
+.info__blocks {
     display: flex;
+    flex: 1;
     margin: 8px 5rem;
     align-items: center;
     justify-content: center;
 }
 
+.info__container {
+    color: #1F2937;
+}
+
+.info__flexbox {
+    flex-direction: column;
+}
+
+.info__blocks {
+    flex-direction: row;
+}
+
+.info__block {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.info__image-container {
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid #3882F6;
+    border-radius: 5px;
+}
+
+.quote__container {
+    padding: 5rem;
+}
+
+.quote__flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote__container em {
+    font-weight: lighter;
+    font-size: 36px;
+    color: #1F2937;
+}
+
+
 .cta__flexbox {
     background-color: #3882F6;
     border-radius: 5px;
+    margin: 2rem 5rem;
 }
+
+.cta__button {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta__button button{
+    border: 1px solid white;
+}
+
 
