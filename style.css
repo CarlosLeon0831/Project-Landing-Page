@@ -17,9 +17,10 @@ body {
 button {
   background-color: #3882f6;
   color: white;
-  padding: 0.3rem 1.5rem;
+  padding: 0.5rem 2rem;
   border-radius: 4px;
   border-style: none;
+  font-size: 18px;
 }
 
 h1 {
@@ -122,6 +123,11 @@ p {
   align-items: center;
   justify-content: center;
   margin: 0 1rem;
+  max-width: 11rem;
+}
+
+.info__block p {
+    text-align: center;
 }
 
 .info__image-container {
@@ -149,10 +155,24 @@ p {
   color: #1f2937;
 }
 
+.cta__container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
 .cta__flexbox {
   background-color: #3882f6;
   border-radius: 5px;
   margin: 2rem 5rem;
+}
+
+.cta__text {
+    flex: 2;
+    padding: 2rem 4rem;
+}
+
+.cta__text p {
+    margin: 0;
 }
 
 .cta__button {
@@ -166,3 +186,4 @@ p {
 .cta__button button {
   border: 1px solid white;
 }
+
