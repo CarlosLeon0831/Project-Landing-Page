@@ -15,15 +15,16 @@ body {
 }
 
 button {
-  background-color: #3882f6;
+  background-color: #F44A2B;
   color: white;
   padding: 0.5rem 2rem;
-  border-radius: 4px;
+  border-radius: 8px;
   border-style: none;
   font-size: 18px;
 }
 
 h1 {
+  color: #0F0E12;
   font-size: 48px;
   margin: 0;
 }
@@ -74,7 +75,7 @@ p {
 .header__container,
 .intro__container,
 .footer__container {
-  background-color: #1f2937;
+  background-color: #D0D2D1;
 }
 
 .header__flexbox {
@@ -82,13 +83,20 @@ p {
 }
 
 .header__logo {
+  display: flex;
   font-size: 24px;
   font-weight: bold;
   flex: 1;
 }
 
+.header__logo img {
+    max-height: 50px;
+}
+
 .header__menu a {
+  color: #919191;
   margin: 0 0 0 1rem;
+  font-size: 18px;
 }
 
 .intro__container {
@@ -96,19 +104,46 @@ p {
   padding-bottom: 5rem;
 }
 
-.intro__text,
-.intro__image {
+.intro__text {
   flex: 1;
-  padding-right: 1rem;
+  padding-right: 2rem;
+}
+
+.intro__image {
+    display: flex;
+    flex: 1;
+    
+}
+
+.intro__image img {
+    object-fit: scale-down;
+    width: 30rem;
+    height: 30rem;
+    margin-left: auto;
+}
+
+.intro__text p {
+    color: #919191;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.intro__text button {
+    margin-bottom: 1rem;
 }
 
 .info__container {
+  background-color: #F0F0EF;
   color: #1f2937;
   padding-bottom: 5rem;
 }
 
 .info__flexbox {
   flex-direction: column;
+}
+
+.info__title {
+    text-align: center;
 }
 
 .info__blocks {
@@ -138,7 +173,7 @@ p {
 }
 
 .quote__container {
-  background-color: #e5e7eb;
+  background-color: #D0D2D1;
   color: black;
   padding: 3rem 5rem;
 }
@@ -149,6 +184,10 @@ p {
   padding: 0 6rem;
 }
 
+/* .quote__flexbox strong{
+    margin-right: auto;
+} */
+
 .quote__container em {
   font-weight: lighter;
   font-size: 36px;
@@ -156,14 +195,16 @@ p {
 }
 
 .cta__container {
+    background-color: #F0F0EF;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
 .cta__flexbox {
-  background-color: #3882f6;
+  background-color: #FAB413;
   border-radius: 5px;
   margin: 2rem 5rem;
+  padding: 1rem;
 }
 
 .cta__text {
@@ -172,6 +213,7 @@ p {
 }
 
 .cta__text p {
+    color: #0F0E12;
     margin: 0;
 }
 
@@ -184,6 +226,11 @@ p {
 }
 
 .cta__button button {
-  border: 1px solid white;
+  background-color: #FAB413;
+  color: #0F0E12;
+  border: 2px solid #0F0E12;
 }
 
+.footer__container {
+    color: #0F0E12;
+}
