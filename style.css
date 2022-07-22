@@ -56,6 +56,11 @@ p {
     margin: 0 1rem;
 }
 
+.intro__container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
 .intro__text,
 .intro__image {
     flex: 1;
@@ -71,15 +76,14 @@ p {
     flex: 1;
     align-items: center;
     justify-content: center;
-}
 
-.quote__container {
-    background-color: #E5E7EB;
-    color: black;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .header__flexbox,
 .intro__flexbox,
+.info__flexbox,
 .info__title,
 .quote__flexbox,
 .cta__flexbox,
@@ -119,8 +123,11 @@ p {
     border-radius: 5px;
 }
 
+
 .quote__container {
-    padding: 5rem;
+    background-color: #E5E7EB;
+    color: black;
+    padding: 3rem 5rem;
 }
 
 .quote__flexbox {
