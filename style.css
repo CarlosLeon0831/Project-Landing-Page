@@ -162,14 +162,24 @@ p {
 }
 
 .info__block p {
+    color: #919191;
     text-align: center;
 }
 
 .info__image-container {
   width: 10rem;
   height: 10rem;
-  border: 4px solid #3882f6;
-  border-radius: 10px;
+  /* border: 4px solid #F44A2B; */
+  border-radius: 50%;
+background: #F0F0EF;
+box-shadow:  16px 16px 32px #cccccb,
+             -16px -16px 32px #ffffff;
+}
+
+.info__image-container img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
 }
 
 .quote__container {
@@ -184,9 +194,9 @@ p {
   padding: 0 6rem;
 }
 
-/* .quote__flexbox strong{
-    margin-right: auto;
-} */
+.quote__flexbox strong{
+    color: #0F0E12
+}
 
 .quote__container em {
   font-weight: lighter;
@@ -232,5 +242,5 @@ p {
 }
 
 .footer__container {
-    color: #0F0E12;
+    color: #919191;
 }
