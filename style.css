@@ -1,5 +1,5 @@
 /* * {
-    border: 1px solid red;
+  border: 1px solid red;
 } */
 
 body {
@@ -15,7 +15,7 @@ body {
 }
 
 button {
-  background-color: #F44A2B;
+  background-color: #f44a2b;
   color: white;
   padding: 0.5rem 2rem;
   border-radius: 8px;
@@ -24,7 +24,7 @@ button {
 }
 
 h1 {
-  color: #0F0E12;
+  color: #0f0e12;
   font-size: 48px;
   margin: 0;
 }
@@ -75,7 +75,7 @@ p {
 .header__container,
 .intro__container,
 .footer__container {
-  background-color: #D0D2D1;
+  background-color: #d0d2d1;
 }
 
 .header__flexbox {
@@ -90,7 +90,7 @@ p {
 }
 
 .header__logo img {
-    max-height: 50px;
+  max-height: 50px;
 }
 
 .header__menu a {
@@ -110,30 +110,29 @@ p {
 }
 
 .intro__image {
-    display: flex;
-    flex: 1;
-    
+  display: flex;
+  flex: 1;
 }
 
 .intro__image img {
-    object-fit: scale-down;
-    width: 30rem;
-    height: 30rem;
-    margin-left: auto;
+  object-fit: scale-down;
+  width: 30rem;
+  height: 30rem;
+  margin-left: auto;
 }
 
 .intro__text p {
-    color: #919191;
-    margin-top: 0;
-    margin-bottom: 10px;
+  color: #919191;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .intro__text button {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .info__container {
-  background-color: #F0F0EF;
+  background-color: #f0f0ef;
   color: #1f2937;
   padding-bottom: 5rem;
 }
@@ -143,7 +142,7 @@ p {
 }
 
 .info__title {
-    text-align: center;
+  text-align: center;
 }
 
 .info__blocks {
@@ -162,8 +161,8 @@ p {
 }
 
 .info__block p {
-    color: #919191;
-    text-align: center;
+  color: #919191;
+  text-align: center;
 }
 
 .info__image-container {
@@ -171,19 +170,18 @@ p {
   height: 10rem;
   /* border: 4px solid #F44A2B; */
   border-radius: 50%;
-background: #F0F0EF;
-box-shadow:  16px 16px 32px #cccccb,
-             -16px -16px 32px #ffffff;
+  background: #f0f0ef;
+  box-shadow: 16px 16px 32px #cccccb, -16px -16px 32px #ffffff;
 }
 
 .info__image-container img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
 }
 
 .quote__container {
-  background-color: #D0D2D1;
+  background-color: #d0d2d1;
   color: black;
   padding: 3rem 5rem;
 }
@@ -194,8 +192,8 @@ box-shadow:  16px 16px 32px #cccccb,
   padding: 0 6rem;
 }
 
-.quote__flexbox strong{
-    color: #0F0E12
+.quote__flexbox strong {
+  color: #0f0e12;
 }
 
 .quote__container em {
@@ -205,26 +203,26 @@ box-shadow:  16px 16px 32px #cccccb,
 }
 
 .cta__container {
-    background-color: #F0F0EF;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  background-color: #f0f0ef;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .cta__flexbox {
-  background-color: #FAB413;
+  background-color: #fab413;
   border-radius: 5px;
   margin: 2rem 5rem;
   padding: 1rem;
 }
 
 .cta__text {
-    flex: 2;
-    padding: 2rem 4rem;
+  flex: 2;
+  padding: 2rem 4rem;
 }
 
 .cta__text p {
-    color: #0F0E12;
-    margin: 0;
+  color: #0f0e12;
+  margin: 0;
 }
 
 .cta__button {
@@ -236,11 +234,83 @@ box-shadow:  16px 16px 32px #cccccb,
 }
 
 .cta__button button {
-  background-color: #FAB413;
-  color: #0F0E12;
-  border: 2px solid #0F0E12;
+  background-color: #fab413;
+  color: #0f0e12;
+  border: 2px solid #0f0e12;
 }
 
 .footer__container {
-    color: #919191;
+  color: #919191;
+}
+
+@media screen and (min-width: 1480px) {
+  .quote__flexbox {
+    padding: 0 15rem;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .info__image-container {
+    width: 140px;
+    height: 140px;
+  }
+
+  .info__block img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .quote__container em {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header__container {
+    padding: 1rem;
+  }
+  .header__flexbox {
+    margin: 1rem 1rem;
+  }
+
+  .intro__flexbox {
+    flex-direction: column;
+  }
+
+  .intro__image img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .quote__container {
+    padding: 48px 0;
+  }
+
+  .quote__container em {
+    font-size: 18px;
+  }
+
+  .quote__flexbox {
+    padding: 0 2rem;
+    margin: 8px 0;
+  }
+
+  .cta__flexbox {
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+
+  .cta__text {
+    padding: 1rem;
+  }
+
+  .footer__container {
+    padding: 1rem;
+  }
+
+  .footer__flexbox {
+    margin: 0;
+  }
 }
