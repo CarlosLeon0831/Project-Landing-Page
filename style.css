@@ -3,9 +3,10 @@
 } */
 
 body {
+  background-color: #d0d2d1;
   padding: 0;
   margin: 0;
-  color: white;
+  color: #919191;
   font-family: "Roboto", sans-serif;
 }
 
@@ -20,7 +21,7 @@ button {
   padding: 0.5rem 2rem;
   border-radius: 8px;
   border-style: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 h1 {
@@ -34,7 +35,7 @@ h2 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .content {
@@ -96,7 +97,7 @@ p {
 .header__menu a {
   color: #919191;
   margin: 0 0 0 1rem;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .intro__container {
@@ -193,7 +194,11 @@ p {
 }
 
 .quote__flexbox strong {
-  color: #0f0e12;
+  color: #919191;
+}
+
+.quote__flexbox h3 {
+  color: #1f2937;
 }
 
 .quote__container em {
@@ -243,10 +248,30 @@ p {
   color: #919191;
 }
 
-@media screen and (min-width: 1480px) {
+@media screen and (min-width: 1350px) {
   .quote__flexbox {
-    padding: 0 15rem;
+    padding: 0 10rem;
   }
+
+  .intro__container {
+    padding: 10rem 5rem;
+  }
+
+  .intro__image {
+    width: 60rem;
+    height: 20rem;
+  }
+
+  .intro__image img {
+    width: 50rem;
+    height: 20rem;
+  }
+
+  .cta__container {
+    margin: 2rem 0;
+    padding: 2rem 20rem;
+  }
+
 }
 
 @media screen and (max-width: 1290px) {
@@ -261,22 +286,18 @@ p {
   }
 }
 
-@media screen and (max-width: 970px) {
-  .quote__container em {
-    font-size: 24px;
+/* Based on iPad Air */
+@media screen and (max-width: 820px) {
+  .intro__container {
+    padding: 2rem 2rem;
   }
-}
-
-@media screen and (max-width: 800px) {
-  .header__container {
-    padding: 1rem;
-  }
-  .header__flexbox {
-    margin: 1rem 1rem;
-  }
-
+  
   .intro__flexbox {
-    flex-direction: column;
+    margin: 0 2rem;
+  }
+
+  .intro__text h1 {
+    font-size: 36px;
   }
 
   .intro__image img {
@@ -284,12 +305,82 @@ p {
     height: 20rem;
   }
 
+  .info__container {
+    padding-top: 3rem;
+  }
+
+  .info__flexbox {
+    margin: 1rem 1rem;
+  }
+  
+  .quote__container em {
+    font-size: 24px;
+  }
+
+  .quote__flexbox {
+    padding: 1rem 0;
+  }
+
+  .cta__text {
+    padding: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 614px) {
+  .header__container {
+    padding: 1rem;
+  }
+  .header__flexbox {
+    margin: 1rem 1rem;
+  }
+
+  .intro__container {
+    padding: 2rem;
+  }
+
+  .intro__container p{
+    font-size: 16px;
+    padding-right: 3rem;
+  }
+
+  .intro__text {
+    padding-right: 0;
+  }
+
+  .intro__flexbox {
+    flex-direction: column;
+  }
+
+  .intro__image {
+    width: 20rem;
+    height: 10rem;
+  }
+
+  .intro__image img {
+    width: 20rem;
+    height: 10rem;
+  }
+
+  .info__container {
+    padding: 1rem 0;
+  }
+
+  .info__block {
+    margin: 2rem 0;
+  }
+
+  .info__flexbox h2 {
+    text-align: left;
+    font-size: 32px;
+  }
+
   .quote__container {
     padding: 48px 0;
   }
 
   .quote__container em {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .quote__flexbox {
